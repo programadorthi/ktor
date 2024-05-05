@@ -6,20 +6,25 @@ description = ""
 
 kotlin {
     createCInterop("host_common", nixTargets()) {
-        defFile = projectDir.resolve("nix/interop/host_common.def")
+        defFile = projectDir.resolve("posix/interop/host_common.def")
     }
 
     sourceSets {
-        jvmAndNixMain {
+        commonMain {
             dependencies {
                 api(project(":ktor-utils"))
                 api(project(":ktor-http"))
-                api(project(":ktor-shared:ktor-serialization"))
                 api(project(":ktor-shared:ktor-events"))
+
+                api(libs.kotlin.reflect)
+            }
+        }
+
+        jvmAndNixMain {
+            dependencies {
+                api(project(":ktor-shared:ktor-serialization"))
                 api(project(":ktor-http:ktor-http-cio"))
                 api(project(":ktor-shared:ktor-websockets"))
-                
-                api(libs.kotlin.reflect)
             }
         }
 
