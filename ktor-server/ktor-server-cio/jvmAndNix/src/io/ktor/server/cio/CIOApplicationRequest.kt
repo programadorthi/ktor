@@ -6,7 +6,7 @@ package io.ktor.server.cio
 
 import io.ktor.http.*
 import io.ktor.http.cio.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.request.*
 import io.ktor.util.network.*

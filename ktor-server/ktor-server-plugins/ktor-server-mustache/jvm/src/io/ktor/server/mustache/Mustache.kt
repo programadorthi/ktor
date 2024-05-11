@@ -7,8 +7,8 @@ package io.ktor.server.mustache
 import com.github.mustachejava.*
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.utils.io.*
 import java.io.*
 
@@ -41,7 +41,11 @@ public val Mustache: ApplicationPlugin<MustacheConfig> = createApplicationPlugin
     val mustacheFactory = pluginConfig.mustacheFactory
 
     @OptIn(InternalAPI::class)
-    on(BeforeResponseTransform(MustacheContent::class)) { _, content ->
+    on(
+        BeforeResponseTransform(
+            MustacheContent::class
+        )
+    ) { _, content ->
         with(content) {
             val writer = StringWriter()
             mustacheFactory.compile(content.template).execute(writer, model)

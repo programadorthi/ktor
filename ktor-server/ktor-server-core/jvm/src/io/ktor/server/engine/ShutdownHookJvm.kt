@@ -5,7 +5,7 @@
 package io.ktor.server.engine
 
 import io.ktor.events.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import java.util.concurrent.atomic.*
 
 private val SHUTDOWN_HOOK_DISABLED = System.getProperty("io.ktor.server.engine.ShutdownHook", "true") == "false"

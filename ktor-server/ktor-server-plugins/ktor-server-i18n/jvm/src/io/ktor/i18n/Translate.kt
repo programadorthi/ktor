@@ -4,7 +4,7 @@
 
 package io.ktor.i18n
 
-import io.ktor.server.routing.*
+import io.ktor.routing.core.*
 import java.util.*
 
 /**

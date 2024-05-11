@@ -7,11 +7,11 @@ package io.ktor.server.engine
 import io.ktor.events.*
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.plugins.*
 import io.ktor.server.http.content.*
-import io.ktor.server.plugins.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.util.date.*
 import io.ktor.util.pipeline.*
 import io.ktor.utils.io.*

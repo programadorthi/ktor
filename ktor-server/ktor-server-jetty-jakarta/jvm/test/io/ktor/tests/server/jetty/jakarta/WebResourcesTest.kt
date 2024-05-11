@@ -7,7 +7,7 @@ package io.ktor.tests.server.jetty.jakarta
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
-import io.ktor.server.routing.*
+import io.ktor.routing.core.*
 import io.ktor.server.servlet.jakarta.*
 import io.ktor.server.testing.*
 import org.eclipse.jetty.server.handler.*

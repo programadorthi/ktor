@@ -4,11 +4,11 @@
 package io.ktor.serialization.test
 
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*

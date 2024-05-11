@@ -8,10 +8,10 @@ import io.ktor.client.plugins.contentnegotiation.tests.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
+import io.ktor.routing.core.*
 import io.ktor.serialization.kotlinx.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import kotlinx.serialization.json.*
 import kotlin.test.*

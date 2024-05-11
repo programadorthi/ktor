@@ -7,7 +7,7 @@ package io.ktor.server.auth
 import io.ktor.http.*
 import io.ktor.http.auth.*
 import io.ktor.http.parsing.*
-import io.ktor.server.plugins.*
+import io.ktor.routing.core.plugins.*
 import io.ktor.server.request.*
 
 /**

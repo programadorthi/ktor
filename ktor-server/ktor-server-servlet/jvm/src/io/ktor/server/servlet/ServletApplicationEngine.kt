@@ -6,7 +6,8 @@ package io.ktor.server.servlet
 
 import io.ktor.events.*
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.config.*
 import io.ktor.server.config.ConfigLoader.Companion.load
 import io.ktor.server.engine.*

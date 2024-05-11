@@ -12,7 +12,7 @@ import com.auth0.jwt.impl.*
 import com.auth0.jwt.interfaces.*
 import com.auth0.jwt.interfaces.JWTVerifier
 import io.ktor.http.auth.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.request.*
 import java.security.interfaces.*

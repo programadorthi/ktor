@@ -5,7 +5,8 @@
 package io.ktor.server.jetty.jakarta
 
 import io.ktor.events.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.engine.*
 import kotlinx.coroutines.*
 

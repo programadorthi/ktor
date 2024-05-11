@@ -10,10 +10,10 @@ import io.ktor.http.*
 import io.ktor.http.content.*
 import io.ktor.network.selector.*
 import io.ktor.network.sockets.*
+import io.ktor.routing.core.*
 import io.ktor.server.cio.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.suites.*
 import io.ktor.utils.io.*
 import io.ktor.utils.io.core.*

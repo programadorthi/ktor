@@ -11,11 +11,11 @@ import io.ktor.client.request.forms.*
 import io.ktor.client.tests.utils.*
 import io.ktor.http.*
 import io.ktor.network.sockets.*
+import io.ktor.routing.core.*
 import io.ktor.server.cio.*
 import io.ktor.server.engine.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.utils.io.*
 import kotlinx.coroutines.*
 import okhttp3.*

@@ -4,7 +4,7 @@
 
 package io.ktor.server.sessions
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 
 /**
  * A session transport used to [receive], [send], or [clear] a session from/to an [ApplicationCall].

@@ -6,7 +6,7 @@ package io.ktor.server.html
 
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.response.*
 import io.ktor.utils.io.*
 import io.ktor.utils.io.charsets.*

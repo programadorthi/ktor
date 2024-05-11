@@ -5,6 +5,8 @@
 package io.ktor.server.logging
 
 import io.ktor.events.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.logging.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.testing.*

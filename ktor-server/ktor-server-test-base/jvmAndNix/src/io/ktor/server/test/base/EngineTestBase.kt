@@ -6,9 +6,9 @@ package io.ktor.server.test.base
 
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
-import io.ktor.server.routing.*
 import io.ktor.util.logging.*
 import kotlinx.coroutines.*
 import kotlin.coroutines.*

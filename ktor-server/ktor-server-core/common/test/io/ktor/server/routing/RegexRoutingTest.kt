@@ -7,8 +7,17 @@ package io.ktor.server.routing
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
+import io.ktor.routing.core.delete
+import io.ktor.routing.core.get
+import io.ktor.routing.core.head
+import io.ktor.routing.core.options
+import io.ktor.routing.core.patch
+import io.ktor.routing.core.post
+import io.ktor.routing.core.put
 import io.ktor.server.testing.*
 import kotlin.test.*
 

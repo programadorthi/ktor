@@ -4,8 +4,8 @@
 
 package io.ktor.server.plugins.callloging
 
-import io.ktor.server.application.*
-import io.ktor.server.logging.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.logging.*
 import io.ktor.util.*
 
 internal fun PluginBuilder<CallLoggingConfig>.setupMDCProvider() {

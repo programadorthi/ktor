@@ -4,7 +4,7 @@
 
 package io.ktor.server.testing
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
 import kotlinx.coroutines.*
 import kotlin.coroutines.*

@@ -4,7 +4,8 @@
 
 package io.ktor.server.netty.http1
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import io.ktor.server.netty.cio.*

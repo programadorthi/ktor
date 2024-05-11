@@ -4,6 +4,7 @@
 
 package io.ktor.server.sessions
 
+import io.ktor.routing.core.application.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*

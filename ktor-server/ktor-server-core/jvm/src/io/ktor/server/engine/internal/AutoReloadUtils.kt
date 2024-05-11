@@ -4,7 +4,8 @@
 
 package io.ktor.server.engine.internal
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import java.lang.reflect.*
 import java.nio.file.*
 import kotlin.reflect.*

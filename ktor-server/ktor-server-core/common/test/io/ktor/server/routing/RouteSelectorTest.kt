@@ -4,7 +4,8 @@
 
 package io.ktor.tests.routing
 
-import io.ktor.server.routing.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.evaluatePathSegmentParameter
 import kotlin.test.*
 
 internal class RouteSelectorTest {

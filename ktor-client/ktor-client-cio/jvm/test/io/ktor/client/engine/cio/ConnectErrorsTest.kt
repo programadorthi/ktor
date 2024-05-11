@@ -10,11 +10,11 @@ import io.ktor.client.engine.*
 import io.ktor.client.request.*
 import io.ktor.junit.*
 import io.ktor.network.tls.certificates.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.debug.junit5.*
 import org.junit.jupiter.api.extension.*

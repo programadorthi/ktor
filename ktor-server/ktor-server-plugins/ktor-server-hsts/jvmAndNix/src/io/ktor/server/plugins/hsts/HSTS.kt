@@ -5,7 +5,7 @@
 package io.ktor.server.plugins.hsts
 
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.plugins.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
@@ -106,6 +106,9 @@ public val HSTS: RouteScopedPlugin<HSTSConfig> = createRouteScopedPlugin("HSTS",
         }
     }
 
+    /**
+     * A constructed default `Strict-Transport-Security` header value.
+     */
     /**
      * A constructed default `Strict-Transport-Security` header value.
      */

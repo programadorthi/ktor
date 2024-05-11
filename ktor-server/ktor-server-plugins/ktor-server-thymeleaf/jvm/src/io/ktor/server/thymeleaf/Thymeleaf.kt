@@ -6,8 +6,8 @@ package io.ktor.server.thymeleaf
 
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.utils.io.*
 import org.thymeleaf.*
 import org.thymeleaf.context.*
@@ -42,7 +42,11 @@ public val Thymeleaf: ApplicationPlugin<TemplateEngine> = createApplicationPlugi
     ::TemplateEngine
 ) {
     @OptIn(InternalAPI::class)
-    on(BeforeResponseTransform(ThymeleafContent::class)) { _, content ->
+    on(
+        BeforeResponseTransform(
+            ThymeleafContent::class
+        )
+    ) { _, content ->
         with(content) {
             val context = Context(locale).apply { setVariables(model) }
 

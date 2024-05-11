@@ -5,11 +5,11 @@
 package io.ktor.server.engine
 
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.logging.*
+import io.ktor.routing.core.plugins.*
 import io.ktor.server.config.*
 import io.ktor.server.engine.internal.*
-import io.ktor.server.logging.*
-import io.ktor.server.plugins.*
 import io.ktor.server.response.*
 import io.ktor.util.cio.*
 import io.ktor.util.logging.*

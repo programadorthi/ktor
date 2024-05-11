@@ -7,9 +7,9 @@
 package io.ktor.tests.velocity
 
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.plugins.conditionalheaders.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import io.ktor.server.velocity.*
 import org.apache.velocity.runtime.resource.loader.*

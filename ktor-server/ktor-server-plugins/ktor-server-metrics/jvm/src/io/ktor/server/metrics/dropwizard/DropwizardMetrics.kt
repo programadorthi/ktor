@@ -7,10 +7,10 @@ package io.ktor.server.metrics.dropwizard
 import com.codahale.metrics.*
 import com.codahale.metrics.MetricRegistry.*
 import com.codahale.metrics.jvm.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.server.request.*
-import io.ktor.server.routing.*
 import io.ktor.utils.io.*
 import java.util.concurrent.*
 

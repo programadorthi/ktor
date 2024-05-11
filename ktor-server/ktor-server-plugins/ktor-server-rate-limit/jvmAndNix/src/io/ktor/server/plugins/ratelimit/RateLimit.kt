@@ -4,7 +4,7 @@
 
 package io.ktor.server.plugins.ratelimit
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.util.*
 import io.ktor.util.collections.*
 import io.ktor.util.logging.*

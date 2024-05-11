@@ -6,6 +6,8 @@ package io.ktor.tests.auth.ldap
 
 import io.ktor.http.*
 import io.ktor.http.auth.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.ldap.*

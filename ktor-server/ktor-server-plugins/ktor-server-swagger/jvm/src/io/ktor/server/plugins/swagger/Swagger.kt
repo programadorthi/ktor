@@ -5,6 +5,7 @@
 package io.ktor.server.plugins.swagger
 
 import io.ktor.http.*
+import io.ktor.routing.core.*
 import io.ktor.server.application.*
 import io.ktor.server.html.*
 import io.ktor.server.request.*

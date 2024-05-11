@@ -4,7 +4,7 @@
 
 package io.ktor.server.plugins.dataconversion
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.util.*
 import io.ktor.util.converters.*
 import io.ktor.util.converters.DataConversion

@@ -4,7 +4,7 @@
 
 package io.ktor.server.jetty
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.jetty.internal.*
 import io.ktor.server.servlet.*
 import io.ktor.utils.io.*

@@ -7,9 +7,9 @@ package io.ktor.server.plugins
 import io.ktor.client.plugins.websocket.*
 import io.ktor.client.request.*
 import io.ktor.http.*
+import io.ktor.routing.core.*
 import io.ktor.server.plugins.forwardedheaders.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.sessions.*
 import io.ktor.server.testing.*
 import io.ktor.server.util.*

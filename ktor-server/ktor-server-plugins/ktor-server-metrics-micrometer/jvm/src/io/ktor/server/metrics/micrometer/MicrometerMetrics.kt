@@ -4,11 +4,11 @@
 
 package io.ktor.server.metrics.micrometer
 
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
-import io.ktor.server.application.hooks.Metrics
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
+import io.ktor.routing.core.application.hooks.Metrics
 import io.ktor.server.request.*
-import io.ktor.server.routing.*
 import io.ktor.util.*
 import io.ktor.utils.io.*
 import io.micrometer.core.instrument.*

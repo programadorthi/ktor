@@ -4,7 +4,7 @@
 
 package io.ktor.server.engine
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.config.*
 import io.ktor.util.*
 import java.io.*

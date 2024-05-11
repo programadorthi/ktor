@@ -4,7 +4,7 @@
 
 package io.ktor.server.plugins.doublereceive
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.request.*
 
 internal object ReceiveBytes : Hook<suspend (ApplicationCall, Any) -> Any> {

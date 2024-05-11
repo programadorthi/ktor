@@ -6,8 +6,8 @@ package io.ktor.server.plugins.autohead
 
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.server.plugins.*
 import io.ktor.util.*
 

@@ -4,7 +4,7 @@
 
 package io.ktor.tests.server.jetty.http2.jakarta
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.jetty.jakarta.*
 import io.ktor.server.response.*

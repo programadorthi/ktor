@@ -5,7 +5,7 @@
 package io.ktor.server.response
 
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 
 /**
  * A server's response.

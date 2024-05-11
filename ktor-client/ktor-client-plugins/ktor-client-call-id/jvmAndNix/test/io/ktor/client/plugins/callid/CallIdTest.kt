@@ -8,9 +8,9 @@ import io.ktor.callid.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
+import io.ktor.routing.core.*
 import io.ktor.server.plugins.callid.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import kotlin.coroutines.*
 import kotlin.test.*

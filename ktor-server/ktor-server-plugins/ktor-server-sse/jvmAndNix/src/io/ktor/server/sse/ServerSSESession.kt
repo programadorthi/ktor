@@ -4,7 +4,7 @@
 
 package io.ktor.server.sse
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.sse.*
 import kotlinx.coroutines.*
 

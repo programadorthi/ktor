@@ -6,9 +6,9 @@ package io.ktor.tests.server.tomcat.jakarta
 
 import io.ktor.client.statement.*
 import io.ktor.network.tls.certificates.*
+import io.ktor.routing.core.*
 import io.ktor.server.engine.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.servlet.jakarta.*
 import io.ktor.server.testing.suites.*
 import io.ktor.server.tomcat.jakarta.*

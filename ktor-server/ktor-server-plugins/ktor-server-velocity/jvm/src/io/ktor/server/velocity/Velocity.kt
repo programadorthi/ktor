@@ -6,8 +6,8 @@ package io.ktor.server.velocity
 
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.utils.io.*
 import org.apache.velocity.*
 import org.apache.velocity.app.*
@@ -55,7 +55,11 @@ public val Velocity: ApplicationPlugin<VelocityEngine> = createApplicationPlugin
     pluginConfig.init()
 
     @OptIn(InternalAPI::class)
-    on(BeforeResponseTransform(VelocityContent::class)) { _, content ->
+    on(
+        BeforeResponseTransform(
+            VelocityContent::class
+        )
+    ) { _, content ->
         velocityOutgoingContent(
             pluginConfig.getTemplate(content.template),
             VelocityContext(content.model),

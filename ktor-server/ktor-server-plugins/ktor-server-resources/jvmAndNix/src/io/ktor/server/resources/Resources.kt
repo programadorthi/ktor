@@ -6,7 +6,7 @@ package io.ktor.server.resources
 
 import io.ktor.http.*
 import io.ktor.resources.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.util.*
 import io.ktor.resources.Resources as ResourcesCore
 
@@ -44,7 +44,8 @@ import io.ktor.resources.Resources as ResourcesCore
  *
  * @see Resource
  */
-public object Resources : BaseApplicationPlugin<Application, ResourcesCore.Configuration, ResourcesCore> {
+public object Resources :
+    BaseApplicationPlugin<Application, ResourcesCore.Configuration, ResourcesCore> {
 
     override val key: AttributeKey<ResourcesCore> = AttributeKey("Resources")
 

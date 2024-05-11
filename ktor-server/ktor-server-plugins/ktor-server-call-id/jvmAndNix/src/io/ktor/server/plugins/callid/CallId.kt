@@ -6,6 +6,8 @@ package io.ktor.server.plugins.callid
 
 import io.ktor.callid.*
 import io.ktor.http.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.server.application.*
 import io.ktor.server.application.hooks.*
 import io.ktor.server.request.*

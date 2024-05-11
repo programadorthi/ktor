@@ -6,8 +6,8 @@ package io.ktor.server.pebble
 
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.server.request.*
 import io.ktor.utils.io.*
 import io.pebbletemplates.pebble.*
@@ -54,7 +54,11 @@ public val Pebble: ApplicationPlugin<PebbleConfiguration> = createApplicationPlu
     val availableLanguages: List<String>? = pluginConfig.availableLanguages?.toList()
 
     @OptIn(InternalAPI::class)
-    on(BeforeResponseTransform(PebbleContent::class)) { call, content ->
+    on(
+        BeforeResponseTransform(
+            PebbleContent::class
+        )
+    ) { call, content ->
         with(content) {
             val writer = StringWriter()
             var locale = locale

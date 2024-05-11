@@ -9,9 +9,9 @@ package io.ktor.server.testing
 import io.ktor.client.*
 import io.ktor.client.engine.*
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.client.*
 import io.ktor.util.pipeline.*
 import io.ktor.utils.io.*

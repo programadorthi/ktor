@@ -5,6 +5,7 @@
 package io.ktor.server.routing
 
 import io.ktor.http.*
+import io.ktor.routing.core.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.*
 

@@ -6,7 +6,8 @@ package io.ktor.server.engine
 
 import io.ktor.events.*
 import io.ktor.events.EventDefinition
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.engine.internal.*
 import kotlinx.coroutines.*
 

@@ -6,9 +6,9 @@ package io.ktor.tests.server.routing
 
 import io.ktor.client.request.*
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import io.ktor.util.pipeline.*
 import kotlin.test.*

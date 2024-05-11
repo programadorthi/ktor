@@ -5,7 +5,7 @@
 package io.ktor.server.velocity
 
 import io.ktor.http.content.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import org.apache.velocity.app.*
 import org.apache.velocity.tools.*
 import org.apache.velocity.tools.config.*

@@ -5,7 +5,7 @@
 package io.ktor.server.util
 
 import io.ktor.http.*
-import io.ktor.server.plugins.*
+import io.ktor.routing.core.plugins.*
 import io.ktor.util.converters.*
 import io.ktor.util.reflect.*
 import kotlin.reflect.*

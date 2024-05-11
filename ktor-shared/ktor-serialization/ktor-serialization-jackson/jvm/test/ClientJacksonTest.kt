@@ -10,11 +10,11 @@ import io.ktor.client.plugins.contentnegotiation.tests.*
 import io.ktor.client.request.*
 import io.ktor.client.tests.utils.*
 import io.ktor.http.*
+import io.ktor.routing.core.*
 import io.ktor.serialization.*
 import io.ktor.serialization.jackson.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import kotlin.test.*
 
 class ClientJacksonTest : AbstractClientContentNegotiationTest() {

@@ -6,9 +6,9 @@ package io.ktor.server.plugins.statuspages
 
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
-import io.ktor.server.logging.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
+import io.ktor.routing.core.logging.*
 import io.ktor.server.request.*
 import io.ktor.util.*
 import io.ktor.util.logging.*

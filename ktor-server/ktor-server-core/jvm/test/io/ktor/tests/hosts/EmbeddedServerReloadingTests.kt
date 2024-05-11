@@ -9,11 +9,12 @@ package io.ktor.tests.hosts
 import com.typesafe.config.*
 import io.ktor.events.*
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.config.*
 import io.ktor.server.engine.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import io.ktor.util.*
 import kotlinx.coroutines.*

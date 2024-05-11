@@ -4,7 +4,7 @@
 
 package io.ktor.server.plugins.defaultheaders
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 
 internal actual fun <T : Any> readKtorVersion(plugin: RouteScopedPluginBuilder<T>): String {
     return plugin.javaClass.`package`.implementationVersion ?: "debug"

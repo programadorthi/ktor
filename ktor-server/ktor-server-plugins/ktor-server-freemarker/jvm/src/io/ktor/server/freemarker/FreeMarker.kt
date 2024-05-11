@@ -7,8 +7,8 @@ package io.ktor.server.freemarker
 import freemarker.template.*
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.utils.io.*
 import java.io.*
 

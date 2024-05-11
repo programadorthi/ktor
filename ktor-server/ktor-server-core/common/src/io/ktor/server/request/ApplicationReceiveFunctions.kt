@@ -6,6 +6,8 @@ package io.ktor.server.request
 
 import io.ktor.http.*
 import io.ktor.http.content.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.plugins.*
 import io.ktor.server.application.*
 import io.ktor.server.application.internal.*
 import io.ktor.server.plugins.*
@@ -170,7 +172,7 @@ public suspend inline fun ApplicationCall.receiveParameters(): Parameters = rece
 /**
  * Thrown when content cannot be transformed to the desired type.
  */
-public typealias ContentTransformationException = io.ktor.server.plugins.ContentTransformationException
+public typealias ContentTransformationException = io.ktor.routing.core.plugins.ContentTransformationException
 
 /**
  * This object is attached to an [ApplicationCall] with [DoubleReceivePreventionTokenKey] when

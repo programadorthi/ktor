@@ -4,8 +4,8 @@
 
 package io.ktor.server.servlet.jakarta
 
+import io.ktor.routing.core.*
 import io.ktor.server.request.*
-import io.ktor.server.routing.*
 import java.security.*
 
 /**

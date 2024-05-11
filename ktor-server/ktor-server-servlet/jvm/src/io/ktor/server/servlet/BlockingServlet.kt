@@ -5,7 +5,7 @@
 package io.ktor.server.servlet
 
 import io.ktor.http.content.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
 import io.ktor.util.cio.*
 import io.ktor.utils.io.*

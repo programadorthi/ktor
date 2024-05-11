@@ -4,7 +4,7 @@
 
 package io.ktor.server.plugins.defaultheaders
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import kotlinx.cinterop.*
 import utils.*
 

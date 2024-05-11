@@ -5,7 +5,7 @@
 package io.ktor.server.netty
 
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.request.*
 import io.ktor.utils.io.*

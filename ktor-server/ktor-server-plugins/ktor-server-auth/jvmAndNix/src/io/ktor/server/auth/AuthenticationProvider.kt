@@ -4,7 +4,7 @@
 
 package io.ktor.server.auth
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 
 /**
  * A predicate function that accepts an application call and returns `true` or `false`.

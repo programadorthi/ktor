@@ -4,7 +4,7 @@
 
 package io.ktor.server.plugins
 
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.config.*
 import io.ktor.server.config.ConfigLoader.Companion.load
 import io.ktor.server.testing.*

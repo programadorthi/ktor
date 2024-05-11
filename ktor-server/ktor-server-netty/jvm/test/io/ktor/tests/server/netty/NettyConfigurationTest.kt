@@ -5,7 +5,8 @@
 package io.ktor.tests.server.netty
 
 import io.ktor.events.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.config.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*

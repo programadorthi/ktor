@@ -4,8 +4,8 @@
 
 package io.ktor.server.plugins.requestvalidation
 
-import io.ktor.server.application.*
-import io.ktor.server.application.hooks.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.hooks.*
 import io.ktor.server.request.*
 import io.ktor.utils.io.*
 import io.ktor.utils.io.errors.*

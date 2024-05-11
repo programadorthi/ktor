@@ -6,7 +6,8 @@ package io.ktor.server.tomcat.jakarta
 
 import io.ktor.events.*
 import io.ktor.http.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.application.*
+import io.ktor.routing.core.application.ApplicationEnvironment
 import io.ktor.server.engine.*
 import io.ktor.server.servlet.jakarta.*
 import jakarta.servlet.*

@@ -9,11 +9,11 @@ import com.auth0.jwt.*
 import com.auth0.jwt.algorithms.*
 import io.ktor.http.*
 import io.ktor.http.auth.*
-import io.ktor.server.application.*
+import io.ktor.routing.core.*
+import io.ktor.routing.core.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.Principal
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import io.mockk.*
 import java.security.*
