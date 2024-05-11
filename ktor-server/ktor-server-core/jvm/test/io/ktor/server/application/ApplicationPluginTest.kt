@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2021 JetBrains s.r.o and contributors. Use of this source code is governed by the Apache 2.0 license.
+ * Copyright 2014-2024 JetBrains s.r.o and contributors. Use of this source code is governed by the Apache 2.0 license.
  */
 
 package io.ktor.server.application
@@ -10,7 +10,6 @@ import io.ktor.routing.core.*
 import io.ktor.routing.core.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import io.ktor.server.testing.*
 import io.ktor.util.*
 import io.ktor.utils.io.*
@@ -244,7 +243,7 @@ class ApplicationPluginTest {
     @Test
     fun `test routing scoped install can access route`() = testApplication {
         // check that route property exists in all builders
-        val pluginWithConfig = createRouteScopedPlugin("A", ::FConfig) {
+        val pluginWithConfig = createRouteScopedPlugin("A", ApplicationPluginTest::FConfig) {
             val path = route?.toString() ?: "no route"
         }
         val pluginWithConfigAndConfigPath = createRouteScopedPlugin("A", "configPath", { FConfig() }) {
